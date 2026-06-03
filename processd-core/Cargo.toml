@@ -1,0 +1,11 @@
+[package]
+name    = "processd-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nix       = { workspace = true }
+serde     = { workspace = true }
+toml      = { workspace = true }
+thiserror = { workspace = true }
+serde_json = { workspace = true }

@@ -1,0 +1,10 @@
+[package]
+name    = "processctl"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+processd-core = { workspace = true }
+clap          = { workspace = true }
+serde         = { workspace = true }
+serde_json    = { workspace = true }
