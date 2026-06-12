@@ -1,0 +1,14 @@
+/home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/deps/thiserror-604a0ee973210b87.d: /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/aserror.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/display.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/var.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/private.rs /home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/build/thiserror-9da379b1c49a3718/out/private.rs
+
+/home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/deps/libthiserror-604a0ee973210b87.rlib: /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/aserror.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/display.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/var.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/private.rs /home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/build/thiserror-9da379b1c49a3718/out/private.rs
+
+/home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/deps/libthiserror-604a0ee973210b87.rmeta: /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/aserror.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/display.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/var.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/private.rs /home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/build/thiserror-9da379b1c49a3718/out/private.rs
+
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs:
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/aserror.rs:
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/display.rs:
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/var.rs:
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/private.rs:
+/home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/build/thiserror-9da379b1c49a3718/out/private.rs:
+
+# env-dep:OUT_DIR=/home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/build/thiserror-9da379b1c49a3718/out

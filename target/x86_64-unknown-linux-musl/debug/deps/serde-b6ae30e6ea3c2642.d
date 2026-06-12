@@ -1,0 +1,14 @@
+/home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/deps/serde-b6ae30e6ea3c2642.d: /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/build/serde-2a684789756a3181/out/private.rs
+
+/home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/deps/libserde-b6ae30e6ea3c2642.rlib: /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/build/serde-2a684789756a3181/out/private.rs
+
+/home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/deps/libserde-b6ae30e6ea3c2642.rmeta: /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/build/serde-2a684789756a3181/out/private.rs
+
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/build/serde-2a684789756a3181/out/private.rs:
+
+# env-dep:OUT_DIR=/home/karimkandil/processd/target/x86_64-unknown-linux-musl/debug/build/serde-2a684789756a3181/out
