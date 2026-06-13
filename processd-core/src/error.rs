@@ -13,6 +13,9 @@ pub enum ConfigError {
 
     #[error("dependency cycle detected involving '{0}'")]
     CycleDetected(String),
+
+    #[error("capability '{capability}' already provided by '{existing}', cannot also be provided by '{new}'")]
+    DuplicateProvider { capability: String, existing: String, new: String },
 }
 
 
