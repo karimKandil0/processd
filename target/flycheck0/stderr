@@ -1,5 +1,5 @@
-   0.091510899s  INFO prepare_target{force=false package_id=processctl v0.1.0 (/home/karimkandil/processd/processctl) target="processctl"}: cargo::core::compiler::fingerprint: fingerprint error for processctl v0.1.0 (/home/karimkandil/processd/processctl)/Check { test: false }/TargetInner { name: "processctl", doc: true, ..: with_path("/home/karimkandil/processd/processctl/src/main.rs", Edition2021) }
-   0.091564372s  INFO prepare_target{force=false package_id=processctl v0.1.0 (/home/karimkandil/processd/processctl) target="processctl"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/processctl-41c041a1112e21c4/bin-processctl`
+   0.089619168s  INFO prepare_target{force=false package_id=processctl v0.1.0 (/home/karimkandil/processd/processctl) target="processctl"}: cargo::core::compiler::fingerprint: fingerprint error for processctl v0.1.0 (/home/karimkandil/processd/processctl)/Check { test: false }/TargetInner { name: "processctl", doc: true, ..: with_path("/home/karimkandil/processd/processctl/src/main.rs", Edition2021) }
+   0.089647332s  INFO prepare_target{force=false package_id=processctl v0.1.0 (/home/karimkandil/processd/processctl) target="processctl"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/processctl-8fac838e880f8175/bin-processctl`
 
 Caused by:
     No such file or directory (os error 2)
@@ -25,8 +25,8 @@ Stack backtrace:
   17: __libc_start_call_main
   18: __libc_start_main_alias_2
   19: _start
-   0.098582648s  INFO prepare_target{force=false package_id=clap v4.6.1 target="clap"}: cargo::core::compiler::fingerprint: fingerprint error for clap v4.6.1/Check { test: false }/TargetInner { benched: false, ..: lib_target("clap", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clap-4.6.1/src/lib.rs", Edition2024) }
-   0.098613828s  INFO prepare_target{force=false package_id=clap v4.6.1 target="clap"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/clap-0b25652bc69fe0f6/lib-clap`
+   0.096166023s  INFO prepare_target{force=false package_id=clap v4.6.1 target="clap"}: cargo::core::compiler::fingerprint: fingerprint error for clap v4.6.1/Check { test: false }/TargetInner { benched: false, ..: lib_target("clap", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clap-4.6.1/src/lib.rs", Edition2024) }
+   0.096184618s  INFO prepare_target{force=false package_id=clap v4.6.1 target="clap"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/clap-0b25652bc69fe0f6/lib-clap`
 
 Caused by:
     No such file or directory (os error 2)
@@ -53,8 +53,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.099928536s  INFO prepare_target{force=false package_id=clap_derive v4.6.1 target="clap_derive"}: cargo::core::compiler::fingerprint: fingerprint error for clap_derive v4.6.1/Build/TargetInner { benched: false, for_host: true, proc_macro: true, ..: lib_target("clap_derive", ["proc-macro"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clap_derive-4.6.1/src/lib.rs", Edition2024) }
-   0.099959135s  INFO prepare_target{force=false package_id=clap_derive v4.6.1 target="clap_derive"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/clap_derive-eb66c779d137b8c6/lib-clap_derive`
+   0.097145061s  INFO prepare_target{force=false package_id=clap_derive v4.6.1 target="clap_derive"}: cargo::core::compiler::fingerprint: fingerprint error for clap_derive v4.6.1/Build/TargetInner { benched: false, for_host: true, proc_macro: true, ..: lib_target("clap_derive", ["proc-macro"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clap_derive-4.6.1/src/lib.rs", Edition2024) }
+   0.097160350s  INFO prepare_target{force=false package_id=clap_derive v4.6.1 target="clap_derive"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/clap_derive-eb66c779d137b8c6/lib-clap_derive`
 
 Caused by:
     No such file or directory (os error 2)
@@ -82,8 +82,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.100400307s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="proc_macro2"}: cargo::core::compiler::fingerprint: fingerprint error for proc-macro2 v1.0.106/Build/TargetInner { ..: lib_target("proc_macro2", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.106/src/lib.rs", Edition2021) }
-   0.100435615s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="proc_macro2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/proc-macro2-01c7b21b28aeb5c1/lib-proc_macro2`
+   0.097477987s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="proc_macro2"}: cargo::core::compiler::fingerprint: fingerprint error for proc-macro2 v1.0.106/Build/TargetInner { ..: lib_target("proc_macro2", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.106/src/lib.rs", Edition2021) }
+   0.097490110s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="proc_macro2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/proc-macro2-01c7b21b28aeb5c1/lib-proc_macro2`
 
 Caused by:
     No such file or directory (os error 2)
@@ -112,8 +112,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.100997199s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for proc-macro2 v1.0.106/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.106/build.rs", Edition2021) }
-   0.101024672s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/proc-macro2-e1bbb88c696f6459/run-build-script-build-script-build`
+   0.097817655s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for proc-macro2 v1.0.106/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.106/build.rs", Edition2021) }
+   0.097829918s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/proc-macro2-e1bbb88c696f6459/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -144,8 +144,8 @@ Stack backtrace:
   22: __libc_start_call_main
   23: __libc_start_main_alias_2
   24: _start
-   0.101191454s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for proc-macro2 v1.0.106/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.106/build.rs", Edition2021) }
-   0.101200060s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/proc-macro2-e03100d7654f97d6/build-script-build-script-build`
+   0.097967120s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for proc-macro2 v1.0.106/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.106/build.rs", Edition2021) }
+   0.097986217s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/proc-macro2-e03100d7654f97d6/build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -176,8 +176,8 @@ Stack backtrace:
   22: __libc_start_call_main
   23: __libc_start_main_alias_2
   24: _start
-   0.101582639s  INFO prepare_target{force=false package_id=quote v1.0.45 target="quote"}: cargo::core::compiler::fingerprint: fingerprint error for quote v1.0.45/Build/TargetInner { ..: lib_target("quote", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.45/src/lib.rs", Edition2021) }
-   0.101596155s  INFO prepare_target{force=false package_id=quote v1.0.45 target="quote"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/quote-93f09f06032bb077/lib-quote`
+   0.098336856s  INFO prepare_target{force=false package_id=quote v1.0.45 target="quote"}: cargo::core::compiler::fingerprint: fingerprint error for quote v1.0.45/Build/TargetInner { ..: lib_target("quote", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.45/src/lib.rs", Edition2021) }
+   0.098370991s  INFO prepare_target{force=false package_id=quote v1.0.45 target="quote"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/quote-93f09f06032bb077/lib-quote`
 
 Caused by:
     No such file or directory (os error 2)
@@ -206,8 +206,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.101980406s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for quote v1.0.45/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.45/build.rs", Edition2021) }
-   0.101992470s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/quote-ff17973a83002d70/run-build-script-build-script-build`
+   0.098695049s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for quote v1.0.45/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.45/build.rs", Edition2021) }
+   0.098720498s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/quote-ff17973a83002d70/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -238,8 +238,8 @@ Stack backtrace:
   22: __libc_start_call_main
   23: __libc_start_main_alias_2
   24: _start
-   0.102106780s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for quote v1.0.45/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.45/build.rs", Edition2021) }
-   0.102114455s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/quote-9894e840dd0cd703/build-script-build-script-build`
+   0.098849604s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for quote v1.0.45/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.45/build.rs", Edition2021) }
+   0.098857459s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/quote-9894e840dd0cd703/build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -270,8 +270,8 @@ Stack backtrace:
   22: __libc_start_call_main
   23: __libc_start_main_alias_2
   24: _start
-   0.102377042s  INFO prepare_target{force=false package_id=syn v2.0.117 target="syn"}: cargo::core::compiler::fingerprint: fingerprint error for syn v2.0.117/Build/TargetInner { ..: lib_target("syn", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.117/src/lib.rs", Edition2021) }
-   0.102389306s  INFO prepare_target{force=false package_id=syn v2.0.117 target="syn"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/syn-5ce1d3977a97a6c2/lib-syn`
+   0.099109741s  INFO prepare_target{force=false package_id=syn v2.0.117 target="syn"}: cargo::core::compiler::fingerprint: fingerprint error for syn v2.0.117/Build/TargetInner { ..: lib_target("syn", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.117/src/lib.rs", Edition2021) }
+   0.099128246s  INFO prepare_target{force=false package_id=syn v2.0.117 target="syn"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/syn-5ce1d3977a97a6c2/lib-syn`
 
 Caused by:
     No such file or directory (os error 2)
@@ -300,8 +300,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.102721347s  INFO prepare_target{force=false package_id=processd-core v0.1.0 (/home/karimkandil/processd/processd-core) target="processd_core"}: cargo::core::compiler::fingerprint: fingerprint error for processd-core v0.1.0 (/home/karimkandil/processd/processd-core)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("processd_core", ["lib"], "/home/karimkandil/processd/processd-core/src/lib.rs", Edition2021) }
-   0.102734392s  INFO prepare_target{force=false package_id=processd-core v0.1.0 (/home/karimkandil/processd/processd-core) target="processd_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/processd-core-55830be7525b206c/lib-processd_core`
+   0.099488955s  INFO prepare_target{force=false package_id=processd-core v0.1.0 (/home/karimkandil/processd/processd-core) target="processd_core"}: cargo::core::compiler::fingerprint: fingerprint error for processd-core v0.1.0 (/home/karimkandil/processd/processd-core)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("processd_core", ["lib"], "/home/karimkandil/processd/processd-core/src/lib.rs", Edition2021) }
+   0.099502230s  INFO prepare_target{force=false package_id=processd-core v0.1.0 (/home/karimkandil/processd/processd-core) target="processd_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/processd-core-afcddd3c770264ba/lib-processd_core`
 
 Caused by:
     No such file or directory (os error 2)
@@ -328,8 +328,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.103161095s  INFO prepare_target{force=false package_id=nix v0.29.0 target="nix"}: cargo::core::compiler::fingerprint: fingerprint error for nix v0.29.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("nix", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nix-0.29.0/src/lib.rs", Edition2021) }
-   0.103174842s  INFO prepare_target{force=false package_id=nix v0.29.0 target="nix"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/nix-0adb91156c3d6bba/lib-nix`
+   0.099859422s  INFO prepare_target{force=false package_id=nix v0.29.0 target="nix"}: cargo::core::compiler::fingerprint: fingerprint error for nix v0.29.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("nix", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nix-0.29.0/src/lib.rs", Edition2021) }
+   0.099872797s  INFO prepare_target{force=false package_id=nix v0.29.0 target="nix"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/nix-78559532ec228c9e/lib-nix`
 
 Caused by:
     No such file or directory (os error 2)
@@ -357,8 +357,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.103638527s  INFO prepare_target{force=false package_id=libc v0.2.186 target="libc"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/Check { test: false }/TargetInner { ..: lib_target("libc", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/src/lib.rs", Edition2021) }
-   0.103664928s  INFO prepare_target{force=false package_id=libc v0.2.186 target="libc"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/libc-cf45423cb9b41393/lib-libc`
+   0.100326122s  INFO prepare_target{force=false package_id=libc v0.2.186 target="libc"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/Check { test: false }/TargetInner { ..: lib_target("libc", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/src/lib.rs", Edition2021) }
+   0.100342964s  INFO prepare_target{force=false package_id=libc v0.2.186 target="libc"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/libc-cf45423cb9b41393/lib-libc`
 
 Caused by:
     No such file or directory (os error 2)
@@ -387,8 +387,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.104041334s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/build.rs", Edition2021) }
-   0.104053117s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/libc-2d3306e4a59feb71/run-build-script-build-script-build`
+   0.100703072s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/build.rs", Edition2021) }
+   0.100715215s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/libc-2d3306e4a59feb71/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -419,8 +419,8 @@ Stack backtrace:
   22: __libc_start_call_main
   23: __libc_start_main_alias_2
   24: _start
-   0.104164773s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/build.rs", Edition2021) }
-   0.104172257s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/libc-8b8b17cc00f07020/build-script-build-script-build`
+   0.100836516s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/build.rs", Edition2021) }
+   0.100856514s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/libc-8b8b17cc00f07020/build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -451,8 +451,8 @@ Stack backtrace:
   22: __libc_start_call_main
   23: __libc_start_main_alias_2
   24: _start
-   0.104632115s  INFO prepare_target{force=false package_id=nix v0.29.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for nix v0.29.0/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nix-0.29.0/build.rs", Edition2021) }
-   0.104644999s  INFO prepare_target{force=false package_id=nix v0.29.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/nix-44f90afda6dc0a02/run-build-script-build-script-build`
+   0.101275103s  INFO prepare_target{force=false package_id=nix v0.29.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for nix v0.29.0/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nix-0.29.0/build.rs", Edition2021) }
+   0.101287507s  INFO prepare_target{force=false package_id=nix v0.29.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/nix-44f90afda6dc0a02/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -482,8 +482,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.104786232s  INFO prepare_target{force=false package_id=nix v0.29.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for nix v0.29.0/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nix-0.29.0/build.rs", Edition2021) }
-   0.104793857s  INFO prepare_target{force=false package_id=nix v0.29.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/nix-26738fb2ae636fe5/build-script-build-script-build`
+   0.101397777s  INFO prepare_target{force=false package_id=nix v0.29.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for nix v0.29.0/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nix-0.29.0/build.rs", Edition2021) }
+   0.101405683s  INFO prepare_target{force=false package_id=nix v0.29.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/nix-26738fb2ae636fe5/build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -513,8 +513,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.105171025s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs", Edition2021) }
-   0.105184551s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde-78d5184bcb54ad88/lib-serde`
+   0.101745992s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs", Edition2021) }
+   0.101759999s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde-78d5184bcb54ad88/lib-serde`
 
 Caused by:
     No such file or directory (os error 2)
@@ -542,8 +542,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.105556990s  INFO prepare_target{force=false package_id=serde v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.228/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/build.rs", Edition2021) }
-   0.105569684s  INFO prepare_target{force=false package_id=serde v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde-0e5f270b9c36b272/run-build-script-build-script-build`
+   0.102165242s  INFO prepare_target{force=false package_id=serde v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.228/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/build.rs", Edition2021) }
+   0.102177355s  INFO prepare_target{force=false package_id=serde v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde-0e5f270b9c36b272/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -573,8 +573,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.105679556s  INFO prepare_target{force=false package_id=serde v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.228/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/build.rs", Edition2021) }
-   0.105687191s  INFO prepare_target{force=false package_id=serde v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde-d03ae6202a920bda/build-script-build-script-build`
+   0.102287275s  INFO prepare_target{force=false package_id=serde v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.228/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/build.rs", Edition2021) }
+   0.102296042s  INFO prepare_target{force=false package_id=serde v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde-d03ae6202a920bda/build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -604,8 +604,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.106022628s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde_core", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/lib.rs", Edition2021) }
-   0.106036275s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_core-e58fa2e0a1b049f5/lib-serde_core`
+   0.102548624s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde_core", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/lib.rs", Edition2021) }
+   0.102561759s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_core-e58fa2e0a1b049f5/lib-serde_core`
 
 Caused by:
     No such file or directory (os error 2)
@@ -634,8 +634,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.106392532s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/build.rs", Edition2021) }
-   0.106404165s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_core-70e800836ea7780e/run-build-script-build-script-build`
+   0.102897510s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/build.rs", Edition2021) }
+   0.102918530s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_core-70e800836ea7780e/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -666,8 +666,8 @@ Stack backtrace:
   22: __libc_start_call_main
   23: __libc_start_main_alias_2
   24: _start
-   0.106514688s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/build.rs", Edition2021) }
-   0.106522163s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_core-243be66f248b9e61/build-script-build-script-build`
+   0.103076131s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/build.rs", Edition2021) }
+   0.103084186s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_core-243be66f248b9e61/build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -698,8 +698,8 @@ Stack backtrace:
   22: __libc_start_call_main
   23: __libc_start_main_alias_2
   24: _start
-   0.106789058s  INFO prepare_target{force=false package_id=serde_derive v1.0.228 target="serde_derive"}: cargo::core::compiler::fingerprint: fingerprint error for serde_derive v1.0.228/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("serde_derive", ["proc-macro"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_derive-1.0.228/src/lib.rs", Edition2021) }
-   0.106802664s  INFO prepare_target{force=false package_id=serde_derive v1.0.228 target="serde_derive"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_derive-54643a1068bdf444/lib-serde_derive`
+   0.103304036s  INFO prepare_target{force=false package_id=serde_derive v1.0.228 target="serde_derive"}: cargo::core::compiler::fingerprint: fingerprint error for serde_derive v1.0.228/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("serde_derive", ["proc-macro"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_derive-1.0.228/src/lib.rs", Edition2021) }
+   0.103317622s  INFO prepare_target{force=false package_id=serde_derive v1.0.228 target="serde_derive"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_derive-54643a1068bdf444/lib-serde_derive`
 
 Caused by:
     No such file or directory (os error 2)
@@ -728,8 +728,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.107120528s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="serde_json"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.150/Check { test: false }/TargetInner { ..: lib_target("serde_json", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.150/src/lib.rs", Edition2021) }
-   0.107137611s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="serde_json"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_json-2ca622a573f5b5ae/lib-serde_json`
+   0.103585342s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="serde_json"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.150/Check { test: false }/TargetInner { ..: lib_target("serde_json", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.150/src/lib.rs", Edition2021) }
+   0.103597155s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="serde_json"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_json-2ca622a573f5b5ae/lib-serde_json`
 
 Caused by:
     No such file or directory (os error 2)
@@ -757,8 +757,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.107739603s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.150/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.150/build.rs", Edition2021) }
-   0.107752938s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_json-aeccbff4574baa50/run-build-script-build-script-build`
+   0.104159809s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.150/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.150/build.rs", Edition2021) }
+   0.104172814s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_json-aeccbff4574baa50/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -788,8 +788,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.107877288s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.150/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.150/build.rs", Edition2021) }
-   0.107885504s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_json-e07704f58985a514/build-script-build-script-build`
+   0.104291981s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.150/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.150/build.rs", Edition2021) }
+   0.104300197s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_json-e07704f58985a514/build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -819,8 +819,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.108170003s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="zmij"}: cargo::core::compiler::fingerprint: fingerprint error for zmij v1.0.21/Check { test: false }/TargetInner { ..: lib_target("zmij", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/src/lib.rs", Edition2021) }
-   0.108206023s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="zmij"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/zmij-4a72e7ba718c160e/lib-zmij`
+   0.104559722s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="zmij"}: cargo::core::compiler::fingerprint: fingerprint error for zmij v1.0.21/Check { test: false }/TargetInner { ..: lib_target("zmij", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/src/lib.rs", Edition2021) }
+   0.104572546s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="zmij"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/zmij-4a72e7ba718c160e/lib-zmij`
 
 Caused by:
     No such file or directory (os error 2)
@@ -849,8 +849,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.108533314s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for zmij v1.0.21/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/build.rs", Edition2021) }
-   0.108544777s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/zmij-c9e6528f23c24bdb/run-build-script-build-script-build`
+   0.104920050s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for zmij v1.0.21/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/build.rs", Edition2021) }
+   0.104955417s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/zmij-c9e6528f23c24bdb/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -881,8 +881,8 @@ Stack backtrace:
   22: __libc_start_call_main
   23: __libc_start_main_alias_2
   24: _start
-   0.108652675s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for zmij v1.0.21/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/build.rs", Edition2021) }
-   0.108660059s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/zmij-d28ae85e558174fb/build-script-build-script-build`
+   0.105065618s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for zmij v1.0.21/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/build.rs", Edition2021) }
+   0.105073342s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/zmij-d28ae85e558174fb/build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -913,8 +913,8 @@ Stack backtrace:
   22: __libc_start_call_main
   23: __libc_start_main_alias_2
   24: _start
-   0.108960739s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="thiserror"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror v2.0.18/Check { test: false }/TargetInner { ..: lib_target("thiserror", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs", Edition2021) }
-   0.108977362s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="thiserror"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/thiserror-863fdfb36d2805f7/lib-thiserror`
+   0.105293092s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="thiserror"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror v2.0.18/Check { test: false }/TargetInner { ..: lib_target("thiserror", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs", Edition2021) }
+   0.105306658s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="thiserror"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/thiserror-863fdfb36d2805f7/lib-thiserror`
 
 Caused by:
     No such file or directory (os error 2)
@@ -942,8 +942,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.109337477s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror v2.0.18/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/build.rs", Edition2021) }
-   0.109349109s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/thiserror-97c381cc8bd13e84/run-build-script-build-script-build`
+   0.105664501s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror v2.0.18/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/build.rs", Edition2021) }
+   0.105676373s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/thiserror-97c381cc8bd13e84/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -973,8 +973,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.109456897s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror v2.0.18/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/build.rs", Edition2021) }
-   0.109464331s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/thiserror-5fec38bb3d29b5f0/build-script-build-script-build`
+   0.105784660s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror v2.0.18/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/build.rs", Edition2021) }
+   0.105792495s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/thiserror-5fec38bb3d29b5f0/build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1004,8 +1004,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.109741797s  INFO prepare_target{force=false package_id=thiserror-impl v2.0.18 target="thiserror_impl"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror-impl v2.0.18/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("thiserror_impl", ["proc-macro"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-impl-2.0.18/src/lib.rs", Edition2021) }
-   0.109754902s  INFO prepare_target{force=false package_id=thiserror-impl v2.0.18 target="thiserror_impl"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/thiserror-impl-f9bed3f6e53d5413/lib-thiserror_impl`
+   0.106098629s  INFO prepare_target{force=false package_id=thiserror-impl v2.0.18 target="thiserror_impl"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror-impl v2.0.18/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("thiserror_impl", ["proc-macro"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-impl-2.0.18/src/lib.rs", Edition2021) }
+   0.106112796s  INFO prepare_target{force=false package_id=thiserror-impl v2.0.18 target="thiserror_impl"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/thiserror-impl-f9bed3f6e53d5413/lib-thiserror_impl`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1034,8 +1034,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.110067125s  INFO prepare_target{force=false package_id=toml v0.8.23 target="toml"}: cargo::core::compiler::fingerprint: fingerprint error for toml v0.8.23/Check { test: false }/TargetInner { ..: lib_target("toml", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/src/lib.rs", Edition2021) }
-   0.110083877s  INFO prepare_target{force=false package_id=toml v0.8.23 target="toml"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/toml-eb13128579bbf729/lib-toml`
+   0.106372893s  INFO prepare_target{force=false package_id=toml v0.8.23 target="toml"}: cargo::core::compiler::fingerprint: fingerprint error for toml v0.8.23/Check { test: false }/TargetInner { ..: lib_target("toml", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/src/lib.rs", Edition2021) }
+   0.106384655s  INFO prepare_target{force=false package_id=toml v0.8.23 target="toml"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/toml-eb13128579bbf729/lib-toml`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1063,8 +1063,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.110529527s  INFO prepare_target{force=false package_id=serde_spanned v0.6.9 target="serde_spanned"}: cargo::core::compiler::fingerprint: fingerprint error for serde_spanned v0.6.9/Check { test: false }/TargetInner { ..: lib_target("serde_spanned", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_spanned-0.6.9/src/lib.rs", Edition2021) }
-   0.110547702s  INFO prepare_target{force=false package_id=serde_spanned v0.6.9 target="serde_spanned"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_spanned-b462bd15832b867a/lib-serde_spanned`
+   0.106764921s  INFO prepare_target{force=false package_id=serde_spanned v0.6.9 target="serde_spanned"}: cargo::core::compiler::fingerprint: fingerprint error for serde_spanned v0.6.9/Check { test: false }/TargetInner { ..: lib_target("serde_spanned", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_spanned-0.6.9/src/lib.rs", Edition2021) }
+   0.106777044s  INFO prepare_target{force=false package_id=serde_spanned v0.6.9 target="serde_spanned"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/serde_spanned-b462bd15832b867a/lib-serde_spanned`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1093,8 +1093,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.110859925s  INFO prepare_target{force=false package_id=toml_datetime v0.6.11 target="toml_datetime"}: cargo::core::compiler::fingerprint: fingerprint error for toml_datetime v0.6.11/Check { test: false }/TargetInner { ..: lib_target("toml_datetime", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-0.6.11/src/lib.rs", Edition2021) }
-   0.110882970s  INFO prepare_target{force=false package_id=toml_datetime v0.6.11 target="toml_datetime"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/toml_datetime-c5e76f9f690490af/lib-toml_datetime`
+   0.107136149s  INFO prepare_target{force=false package_id=toml_datetime v0.6.11 target="toml_datetime"}: cargo::core::compiler::fingerprint: fingerprint error for toml_datetime v0.6.11/Check { test: false }/TargetInner { ..: lib_target("toml_datetime", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-0.6.11/src/lib.rs", Edition2021) }
+   0.107148152s  INFO prepare_target{force=false package_id=toml_datetime v0.6.11 target="toml_datetime"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/toml_datetime-c5e76f9f690490af/lib-toml_datetime`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1123,8 +1123,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.111271860s  INFO prepare_target{force=false package_id=toml_edit v0.22.27 target="toml_edit"}: cargo::core::compiler::fingerprint: fingerprint error for toml_edit v0.22.27/Check { test: false }/TargetInner { ..: lib_target("toml_edit", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/lib.rs", Edition2021) }
-   0.111285026s  INFO prepare_target{force=false package_id=toml_edit v0.22.27 target="toml_edit"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/toml_edit-65b3bcd1c91393c7/lib-toml_edit`
+   0.107465267s  INFO prepare_target{force=false package_id=toml_edit v0.22.27 target="toml_edit"}: cargo::core::compiler::fingerprint: fingerprint error for toml_edit v0.22.27/Check { test: false }/TargetInner { ..: lib_target("toml_edit", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/lib.rs", Edition2021) }
+   0.107477310s  INFO prepare_target{force=false package_id=toml_edit v0.22.27 target="toml_edit"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/toml_edit-65b3bcd1c91393c7/lib-toml_edit`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1153,8 +1153,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.112275558s  INFO prepare_target{force=false package_id=processctl v0.1.0 (/home/karimkandil/processd/processctl) target="processctl"}: cargo::core::compiler::fingerprint: fingerprint error for processctl v0.1.0 (/home/karimkandil/processd/processctl)/Check { test: true }/TargetInner { name: "processctl", doc: true, ..: with_path("/home/karimkandil/processd/processctl/src/main.rs", Edition2021) }
-   0.112289344s  INFO prepare_target{force=false package_id=processctl v0.1.0 (/home/karimkandil/processd/processctl) target="processctl"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/processctl-36a7d7dae841a529/test-bin-processctl`
+   0.108593120s  INFO prepare_target{force=false package_id=processctl v0.1.0 (/home/karimkandil/processd/processctl) target="processctl"}: cargo::core::compiler::fingerprint: fingerprint error for processctl v0.1.0 (/home/karimkandil/processd/processctl)/Check { test: true }/TargetInner { name: "processctl", doc: true, ..: with_path("/home/karimkandil/processd/processctl/src/main.rs", Edition2021) }
+   0.108607497s  INFO prepare_target{force=false package_id=processctl v0.1.0 (/home/karimkandil/processd/processctl) target="processctl"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/processctl-bfdb1d0a712cc233/test-bin-processctl`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1180,8 +1180,8 @@ Stack backtrace:
   17: __libc_start_call_main
   18: __libc_start_main_alias_2
   19: _start
-   0.112713613s  INFO prepare_target{force=false package_id=processd v0.1.0 (/home/karimkandil/processd/processd) target="processd"}: cargo::core::compiler::fingerprint: fingerprint error for processd v0.1.0 (/home/karimkandil/processd/processd)/Check { test: false }/TargetInner { name: "processd", doc: true, ..: with_path("/home/karimkandil/processd/processd/src/main.rs", Edition2021) }
-   0.112725235s  INFO prepare_target{force=false package_id=processd v0.1.0 (/home/karimkandil/processd/processd) target="processd"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/processd-400c0e7db0a5a03f/bin-processd`
+   0.109089297s  INFO prepare_target{force=false package_id=processd v0.1.0 (/home/karimkandil/processd/processd) target="processd"}: cargo::core::compiler::fingerprint: fingerprint error for processd v0.1.0 (/home/karimkandil/processd/processd)/Check { test: false }/TargetInner { name: "processd", doc: true, ..: with_path("/home/karimkandil/processd/processd/src/main.rs", Edition2021) }
+   0.109102963s  INFO prepare_target{force=false package_id=processd v0.1.0 (/home/karimkandil/processd/processd) target="processd"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/processd-40347f66fada9b3f/bin-processd`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1207,8 +1207,8 @@ Stack backtrace:
   17: __libc_start_call_main
   18: __libc_start_main_alias_2
   19: _start
-   0.113152310s  INFO prepare_target{force=false package_id=processd v0.1.0 (/home/karimkandil/processd/processd) target="processd"}: cargo::core::compiler::fingerprint: fingerprint error for processd v0.1.0 (/home/karimkandil/processd/processd)/Check { test: true }/TargetInner { name: "processd", doc: true, ..: with_path("/home/karimkandil/processd/processd/src/main.rs", Edition2021) }
-   0.113164233s  INFO prepare_target{force=false package_id=processd v0.1.0 (/home/karimkandil/processd/processd) target="processd"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/processd-72223e54835cdc0d/test-bin-processd`
+   0.109527824s  INFO prepare_target{force=false package_id=processd v0.1.0 (/home/karimkandil/processd/processd) target="processd"}: cargo::core::compiler::fingerprint: fingerprint error for processd v0.1.0 (/home/karimkandil/processd/processd)/Check { test: true }/TargetInner { name: "processd", doc: true, ..: with_path("/home/karimkandil/processd/processd/src/main.rs", Edition2021) }
+   0.109539927s  INFO prepare_target{force=false package_id=processd v0.1.0 (/home/karimkandil/processd/processd) target="processd"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/processd-9b195ec4d027b627/test-bin-processd`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1234,8 +1234,8 @@ Stack backtrace:
   17: __libc_start_call_main
   18: __libc_start_main_alias_2
   19: _start
-   0.113532293s  INFO prepare_target{force=false package_id=processd-core v0.1.0 (/home/karimkandil/processd/processd-core) target="processd_core"}: cargo::core::compiler::fingerprint: fingerprint error for processd-core v0.1.0 (/home/karimkandil/processd/processd-core)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("processd_core", ["lib"], "/home/karimkandil/processd/processd-core/src/lib.rs", Edition2021) }
-   0.113545348s  INFO prepare_target{force=false package_id=processd-core v0.1.0 (/home/karimkandil/processd/processd-core) target="processd_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/processd-core-ad757f7f2e7f3c58/test-lib-processd_core`
+   0.110327069s  INFO prepare_target{force=false package_id=processd-core v0.1.0 (/home/karimkandil/processd/processd-core) target="processd_core"}: cargo::core::compiler::fingerprint: fingerprint error for processd-core v0.1.0 (/home/karimkandil/processd/processd-core)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("processd_core", ["lib"], "/home/karimkandil/processd/processd-core/src/lib.rs", Edition2021) }
+   0.110343480s  INFO prepare_target{force=false package_id=processd-core v0.1.0 (/home/karimkandil/processd/processd-core) target="processd_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/processd-core-d249dfbf10430eaa/test-lib-processd_core`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1261,22 +1261,236 @@ Stack backtrace:
   17: __libc_start_call_main
   18: __libc_start_main_alias_2
   19: _start
+   0.110761027s  INFO prepare_target{force=false package_id=tempfile v3.27.0 target="tempfile"}: cargo::core::compiler::fingerprint: fingerprint error for tempfile v3.27.0/Check { test: false }/TargetInner { ..: lib_target("tempfile", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tempfile-3.27.0/src/lib.rs", Edition2021) }
+   0.110773120s  INFO prepare_target{force=false package_id=tempfile v3.27.0 target="tempfile"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/tempfile-29040d93c0316333/lib-tempfile`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::cli::main
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: main
+  18: __libc_start_call_main
+  19: __libc_start_main_alias_2
+  20: _start
+   0.111163956s  INFO prepare_target{force=false package_id=getrandom v0.4.2 target="getrandom"}: cargo::core::compiler::fingerprint: fingerprint error for getrandom v0.4.2/Check { test: false }/TargetInner { ..: lib_target("getrandom", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/lib.rs", Edition2024) }
+   0.111177232s  INFO prepare_target{force=false package_id=getrandom v0.4.2 target="getrandom"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/getrandom-35831f69e4cb3860/lib-getrandom`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::cli::main
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: main
+  19: __libc_start_call_main
+  20: __libc_start_main_alias_2
+  21: _start
+   0.111593736s  INFO prepare_target{force=false package_id=getrandom v0.4.2 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for getrandom v0.4.2/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/build.rs", Edition2024) }
+   0.111605839s  INFO prepare_target{force=false package_id=getrandom v0.4.2 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/getrandom-64bb5bc4c2ddbd2a/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::custom_build::build_work
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::cli::main
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: main
+  21: __libc_start_call_main
+  22: __libc_start_main_alias_2
+  23: _start
+   0.111724556s  INFO prepare_target{force=false package_id=getrandom v0.4.2 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for getrandom v0.4.2/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/build.rs", Edition2024) }
+   0.111732481s  INFO prepare_target{force=false package_id=getrandom v0.4.2 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/getrandom-7df4746615ce492f/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::cli::main
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: main
+  21: __libc_start_call_main
+  22: __libc_start_main_alias_2
+  23: _start
+   0.112133777s  INFO prepare_target{force=false package_id=rustix v1.1.4 target="rustix"}: cargo::core::compiler::fingerprint: fingerprint error for rustix v1.1.4/Check { test: false }/TargetInner { ..: lib_target("rustix", ["lib"], "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustix-1.1.4/src/lib.rs", Edition2021) }
+   0.112148144s  INFO prepare_target{force=false package_id=rustix v1.1.4 target="rustix"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/rustix-6dd90bc31aebf9f2/lib-rustix`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::cli::main
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: main
+  19: __libc_start_call_main
+  20: __libc_start_main_alias_2
+  21: _start
+   0.112656104s  INFO prepare_target{force=false package_id=rustix v1.1.4 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for rustix v1.1.4/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustix-1.1.4/build.rs", Edition2021) }
+   0.112668728s  INFO prepare_target{force=false package_id=rustix v1.1.4 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/rustix-700dc8bd1e6e585e/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::custom_build::build_work
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::cli::main
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: main
+  21: __libc_start_call_main
+  22: __libc_start_main_alias_2
+  23: _start
+   0.112781734s  INFO prepare_target{force=false package_id=rustix v1.1.4 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for rustix v1.1.4/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustix-1.1.4/build.rs", Edition2021) }
+   0.112789559s  INFO prepare_target{force=false package_id=rustix v1.1.4 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/karimkandil/processd/target/debug/.fingerprint/rustix-14e1d6fc1f53e614/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::cli::main
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: main
+  21: __libc_start_call_main
+  22: __libc_start_main_alias_2
+  23: _start
    Compiling proc-macro2 v1.0.106
    Compiling quote v1.0.45
    Compiling serde_core v1.0.228
    Compiling serde v1.0.228
-   Compiling zmij v1.0.21
    Compiling libc v0.2.186
+   Compiling zmij v1.0.21
    Compiling thiserror v2.0.18
    Compiling nix v0.29.0
    Compiling serde_json v1.0.150
+   Compiling rustix v1.1.4
+   Compiling getrandom v0.4.2
 error: could not compile `serde_json` (build script) due to 1 previous error
 warning: build failed, waiting for other jobs to finish...
+error: could not compile `getrandom` (build script) due to 1 previous error
 error: could not compile `quote` (build script) due to 1 previous error
 error: could not compile `zmij` (build script) due to 1 previous error
+error: could not compile `proc-macro2` (build script) due to 1 previous error
 error: could not compile `serde_core` (build script) due to 1 previous error
 error: could not compile `serde` (build script) due to 1 previous error
-error: could not compile `proc-macro2` (build script) due to 1 previous error
+error: could not compile `rustix` (build script) due to 1 previous error
 error: could not compile `thiserror` (build script) due to 1 previous error
 error: could not compile `libc` (build script) due to 1 previous error
 error: could not compile `nix` (build script) due to 1 previous error

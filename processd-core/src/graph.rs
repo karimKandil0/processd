@@ -2,6 +2,7 @@ use std::collections::{HashMap, VecDeque};
 use crate::config::SystemConfig;
 use crate::error::ConfigError;
 
+#[derive(Debug)]
 pub struct DependencyGraph {
     pub edges: HashMap<String, Vec<String>>,
 }
@@ -104,4 +105,68 @@ pub fn topological_sort(graph: &DependencyGraph) -> Vec<String> {
     }
     result.reverse();
     result
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::config::{ServiceConfig, SystemConfig, RestartPolicy};
+    use std::collections::HashMap;
+
+    fn svc(wants: &[&str], provides: &[&str]) -> ServiceConfig {
+        ServiceConfig {
+            binary: "/bin/true".into(),
+            args: vec![],
+            user: None,
+            wants: wants.iter().map(|s| s.to_string()).collect(),
+            provides: provides.iter().map(|s| s.to_string()).collect(),
+            restart: RestartPolicy::OnFailure,
+        }
+    }
+
+    fn config(services: &[(&str, ServiceConfig)]) -> SystemConfig {
+        let mut map = HashMap::new();
+        for (name, s) in services {
+            map.insert(name.to_string(), s.clone());
+        }
+        SystemConfig { service: map }
+    }
+
+    #[test]
+    fn unknown_dependency() {
+        let cfg = config(&[("api", svc(&["nonexistent"], &[]))]);
+        let err = build_dependency_graph(&cfg).unwrap_err();
+        assert!(matches!(err, ConfigError::UnknownDependency { .. }));
+    }
+
+    #[test]
+    fn cycle_detected() {
+        let cfg = config(&[
+            ("a", svc(&["b_cap"], &["a_cap"])),
+            ("b", svc(&["a_cap"], &["b_cap"])),
+        ]);
+        let err = build_dependency_graph(&cfg).unwrap_err();
+        assert!(matches!(err, ConfigError::CycleDetected(_)));
+    }
+
+    #[test]
+    fn topological_order() {
+        let cfg = config(&[
+            ("postgres", svc(&[], &["database"])),
+            ("api",      svc(&["database"], &[])),
+        ]);
+        let graph = build_dependency_graph(&cfg).unwrap();
+        let order = topological_sort(&graph);
+        let pg = order.iter().position(|x| x == "postgres").unwrap();
+        let api = order.iter().position(|x| x == "api").unwrap();
+        assert!(pg < api, "postgres should come before api, got {:?}", order);
+    }
+
+    #[test]
+    fn no_dependencies() {
+        let cfg = config(&[("solo", svc(&[], &[]))]);
+        let graph = build_dependency_graph(&cfg).unwrap();
+        let order = topological_sort(&graph);
+        assert_eq!(order, vec!["solo"]);
+    }
 }
