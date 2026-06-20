@@ -130,6 +130,8 @@ Types:
   - `None` — ready as soon as process is alive (default)
   - `Exec { command, args }` — exit 0 = ready
   - `Tcp { host, port }` — successful connect = ready
+  - `Notify { socket_path }` — service sends "READY=1" to a Unix socket (sd_notify protocol)
+  - `File { path }` — file exists at the given path = ready (useful for lockfile/pidfile-style signals)
 - `ServiceState` gains `Ready` (probe passed) distinct from `Running` (alive, probe pending)
 
 **In `processd`:**
