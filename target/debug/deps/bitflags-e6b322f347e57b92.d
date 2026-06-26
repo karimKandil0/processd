@@ -1,0 +1,11 @@
+/home/karimkandil/processd/target/debug/deps/bitflags-e6b322f347e57b92.d: /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/lib.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/iter.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/parser.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/traits.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/public.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/internal.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/external.rs
+
+/home/karimkandil/processd/target/debug/deps/libbitflags-e6b322f347e57b92.rmeta: /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/lib.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/iter.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/parser.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/traits.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/public.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/internal.rs /home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/external.rs
+
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/lib.rs:
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/iter.rs:
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/parser.rs:
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/traits.rs:
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/public.rs:
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/internal.rs:
+/home/karimkandil/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.12.1/src/external.rs:

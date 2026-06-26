@@ -1,0 +1,5 @@
+[service.heartbeat]
+binary   = "/bin/sleep"
+args     = ["60"]
+restart  = "always"
+provides = ["heartbeat"]

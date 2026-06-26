@@ -3,7 +3,7 @@ use std::path::Path;
 use serde::Deserialize;
 use crate::error::ConfigError;
 
-#[derive(Debug, Clone, Deserialize, Default)]
+#[derive(Debug, Clone, Deserialize, Default, PartialEq, Eq)]
 #[serde(rename_all = "kebab-case")]
 pub enum RestartPolicy {
     Always,
@@ -12,7 +12,7 @@ pub enum RestartPolicy {
     Never,
 }
 
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Deserialize, PartialEq, Eq)]
 pub struct ServiceConfig {
     pub binary: String,
     #[serde(default)] pub args: Vec<String>,

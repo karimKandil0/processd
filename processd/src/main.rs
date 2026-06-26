@@ -1,3 +1,8 @@
+mod supervisor;
+
+use processd_core::{parse_config, build_dependency_graph, topological_sort};
+use supervisor::{ProcessTable, spawn_service};
+use std::path::Path;
 use nix::mount::{mount, MsFlags};
 use nix::sys::epoll::{Epoll, EpollCreateFlags, EpollEvent, EpollFlags};
 use nix::sys::signal::{sigprocmask, SigSet, SigmaskHow, Signal};
@@ -32,13 +37,57 @@ fn main() {
 
     eprintln!("[processd] running...");
 
+    let config = match parse_config(Path::new("/etc/processd/system.toml")) {
+        Ok(cfg) => cfg,
+        Err(e) => {
+            eprintln!("[processd] dependency error: {e}");
+            emergency_shell();
+        }
+    };
+
+    let graph = match build_dependency_graph(&config) {
+        Ok(g)  => g,
+        Err(e) => {
+            eprintln!("[processd] dependency error: {e}");
+            emergency_shell();
+        }
+    };
+
+    let order = topological_sort(&graph);
+    let mut table = ProcessTable::new();
+
+    for (name, svc) in &config.service {
+        table.register(name, svc.clone());
+    }
+
+    for name in &order {
+        let cfg = &table.services[name].config;
+        match spawn_service(name, cfg) {
+            Ok(pid) => {
+                eprintln!("[processd] spawned {name} (pid {pid})");
+                table.record_spawn(name, pid);
+            }
+            Err(e) => eprintln!("[processd] failed to spawn {name}: {e}"),
+        }
+    }
+
     let mut events = [EpollEvent::empty(); 8];
     loop {
         match epoll.wait(&mut events, None::<u16>) {
             Ok(n) => {
                 for event in &events[..n] {
                     if event.data() == TOKEN_SIGNAL {
-                        handle_signals(&mut sfd);
+                        let to_respawn = handle_signals(&mut sfd, &mut table);
+                        for name in to_respawn {
+                            let cfg = table.services[&name].config.clone();
+                            match spawn_service(&name, &cfg) {
+                                Ok(pid) => {
+                                    eprintln!("[processd] respawned {name} (pid {pid})");
+                                    table.record_spawn(&name, pid);
+                                }
+                                Err(e) => eprintln!("[processd] respawn failed for {name}: {e}"),
+                            }
+                        }
                     }
                 }
             }
@@ -92,24 +141,37 @@ fn setup_epoll(sfd: &SignalFd) -> Result<Epoll, nix::Error> {
     Ok(epoll)
 }
 
-fn reap_zombies() {
+fn reap_zombies(table: &mut ProcessTable) -> Vec<String> {
+    let mut to_respawn = Vec::new();
     loop {
         match waitpid(Pid::from_raw(-1), Some(WaitPidFlag::WNOHANG)) {
-            Ok(WaitStatus::Exited(pid, code))     => eprintln!("[processd] pid {pid} exited with code {code}"),
-            Ok(WaitStatus::Signaled(pid, sig, _)) => eprintln!("[processd] pid {pid} terminated by signal {sig}"),
-            Ok(WaitStatus::StillAlive)             => break,
-            Ok(_)                                  => continue,
-            Err(nix::errno::Errno::ECHILD)         => break,
-            Err(e)                                 => { eprintln!("[processd] waitpid error: {e}"); break; }
+            Ok(WaitStatus::Exited(pid, code)) => {
+                eprintln!("[processd] pid {pid} exited with code {code}");
+                if let Some(name) = table.handle_death(pid, WaitStatus::Exited(pid, code)) {
+                    to_respawn.push(name);
+                }
+            }
+            Ok(WaitStatus::Signaled(pid, sig, dumped)) => {
+                eprintln!("[processd] pid {pid} terminated by signal {sig}");
+                if let Some(name) = table.handle_death(pid, WaitStatus::Signaled(pid, sig, dumped)) {
+                    to_respawn.push(name);
+                }
+            }
+            Ok(WaitStatus::StillAlive)     => break,
+            Ok(_)                          => continue,
+            Err(nix::errno::Errno::ECHILD) => break,
+            Err(e)                         => { eprintln!("[processd] waitpid error: {e}"); break; }
         }
     }
+    to_respawn
 }
 
-fn handle_signals(sfd: &mut SignalFd) {
+fn handle_signals(sfd: &mut SignalFd, table: &mut ProcessTable) -> Vec<String> {
+    let mut to_respawn = Vec::new();
     loop {
         match sfd.read_signal() {
             Ok(Some(info)) => match Signal::try_from(info.ssi_signo as i32) {
-                Ok(Signal::SIGCHLD) => reap_zombies(),
+                Ok(Signal::SIGCHLD) => to_respawn.extend(reap_zombies(table)),
                 Ok(Signal::SIGTERM) => {
                     eprintln!("[processd] shutting down...");
                     std::process::exit(0);
@@ -118,7 +180,8 @@ fn handle_signals(sfd: &mut SignalFd) {
                 _                   => {}
             },
             Ok(None)       => break,
-            Err(e)         => { eprintln!("[processd] signalfd read error: {e}"); break;}
+            Err(e)         => { eprintln!("[processd] signalfd read error: {e}"); break; }
         }
     }
+    to_respawn
 }

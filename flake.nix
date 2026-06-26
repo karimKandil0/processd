@@ -43,7 +43,7 @@
             qemu
 
             # For building minimal rootfs images
-            busybox
+            pkgsStatic.busybox
             cpio
             util-linux
           ];
@@ -56,11 +56,13 @@
 
             alias build-rootfs='
               rm -rf rootfs &&
-              mkdir -p rootfs/{bin,proc,sys,dev,etc} &&
+              mkdir -p rootfs/{bin,proc,sys,dev,etc/processd} &&
               install -m755 target/x86_64-unknown-linux-musl/debug/processd rootfs/init &&
-              install -m755 $(which busybox) rootfs/bin/busybox &&
+              install -m755 ${pkgs.pkgsStatic.busybox}/bin/busybox rootfs/bin/busybox &&
+              install -m644 test/system.toml rootfs/etc/processd/system.toml &&
               ln -sf busybox rootfs/bin/sh &&
               ln -sf busybox rootfs/bin/sleep &&
+              ln -sf busybox rootfs/bin/ps &&
               (cd rootfs && find . | cpio -oH newc | gzip > ../initramfs.cpio.gz) &&
               echo "rootfs built"
             '
