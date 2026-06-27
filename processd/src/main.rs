@@ -1,6 +1,6 @@
 mod supervisor;
 
-use processd_core::{parse_config, build_dependency_graph, topological_sort};
+use processd_core::{parse_config, build_dependency_graph, topological_sort, diff, Action,};
 use supervisor::{ProcessTable, spawn_service};
 use std::path::Path;
 use nix::mount::{mount, MsFlags};
@@ -53,23 +53,15 @@ fn main() {
         }
     };
 
-    let order = topological_sort(&graph);
+    let _order = topological_sort(&graph);
     let mut table = ProcessTable::new();
 
     for (name, svc) in &config.service {
         table.register(name, svc.clone());
     }
 
-    for name in &order {
-        let cfg = &table.services[name].config;
-        match spawn_service(name, cfg) {
-            Ok(pid) => {
-                eprintln!("[processd] spawned {name} (pid {pid})");
-                table.record_spawn(name, pid);
-            }
-            Err(e) => eprintln!("[processd] failed to spawn {name}: {e}"),
-        }
-    }
+    let actions = diff(&config, &table.snapshot());
+    apply(&actions, &mut table);
 
     let mut events = [EpollEvent::empty(); 8];
     loop {
@@ -77,22 +69,38 @@ fn main() {
             Ok(n) => {
                 for event in &events[..n] {
                     if event.data() == TOKEN_SIGNAL {
-                        let to_respawn = handle_signals(&mut sfd, &mut table);
-                        for name in to_respawn {
-                            let cfg = table.services[&name].config.clone();
-                            match spawn_service(&name, &cfg) {
-                                Ok(pid) => {
-                                    eprintln!("[processd] respawned {name} (pid {pid})");
-                                    table.record_spawn(&name, pid);
-                                }
-                                Err(e) => eprintln!("[processd] respawn failed for {name}: {e}"),
-                            }
-                        }
+                        let _ = handle_signals(&mut sfd, &mut table);
+                        let actions = diff(&config, &table.snapshot());
+                        apply(&actions, &mut table);
                     }
                 }
             }
             Err(nix::errno::Errno::EINTR) => continue,
             Err(e)                 => { eprintln!("[processd] epoll_wait error: {e}"); break; }
+        }
+    }
+}
+
+fn apply(actions: &[Action], table: &mut ProcessTable) {
+    for action in actions {
+        match action {
+            Action::Start(name) => {
+                let cfg = table.services[name].config.clone();
+                match spawn_service(name, &cfg) {
+                    Ok(pid) => {
+                        eprintln!("[processd] spawned {name} (pid {pid})");
+                        table.record_spawn(name, pid);
+                    }
+                    Err(e) => eprintln!("[processd] failed to spawn {name}: {e}"),
+                }
+            }
+            Action::Stop(name) => {
+                eprintln!("[processd] stop {name}: not yet implemented");
+            }
+            Action::Restart(name) => {
+                eprintln!("[processd] restart {name}: not yet implemented");
+            }
+            Action::NoOp(string) => {},
         }
     }
 }

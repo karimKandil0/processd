@@ -1,9 +1,9 @@
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 use std::ffi::CString;
 use std::time::Instant;
 use nix::sys::wait::WaitStatus;
 use nix::unistd::{execve, fork, setgid, setuid, ForkResult, Pid, User};
-use processd_core::{RestartPolicy, ServiceConfig};
+use processd_core::{RestartPolicy, ServiceConfig, ActualSnapshot};
 
 #[derive(Debug, thiserror::Error)]
 pub enum SpawnError {
@@ -69,9 +69,6 @@ impl ProcessTable {
         self.pid_to_name.remove(&pid);
     }
 
-    /// Called when a child process dies. Updates the table's state and
-    /// returns the service name if it should be re-spawned, or None if not.
-    /// Also returns None for orphaned PIDs we don't manage (Firefox case).
     pub fn handle_death(&mut self, pid: Pid, status: WaitStatus) -> Option<String> {
         let name = self.pid_to_name.remove(&pid)?;
         let entry = self.services.get_mut(&name)?;
@@ -96,6 +93,25 @@ impl ProcessTable {
             };
             None
         }
+    }
+
+    pub fn snapshot(&self) -> ActualSnapshot {
+        let mut running = HashMap::new();
+        let mut failed = HashSet::new();
+
+        for (name, entry) in &self.services {
+            match &entry.state {
+                ServiceState::Running { .. } => {
+                    running.insert(name.clone(), entry.config.clone());
+                }
+                ServiceState::Failed { .. } => {
+                    failed.insert(name.clone());
+                }
+                _ => {}
+            }
+        }
+
+        ActualSnapshot { running, failed }
     }
 }
 
