@@ -100,7 +100,7 @@ fn apply(actions: &[Action], table: &mut ProcessTable) {
             Action::Restart(name) => {
                 eprintln!("[processd] restart {name}: not yet implemented");
             }
-            Action::NoOp(string) => {},
+            Action::NoOp() => {},
         }
     }
 }
