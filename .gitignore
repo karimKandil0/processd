@@ -1,0 +1,5 @@
+/target
+initramfs.cpio.gz
+*.iso
+*.img
+.env
